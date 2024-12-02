@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - devops_project
+    environment:
+      - API_BASE_URL=http://web-app-container:8080/api
+
+networks:
+  devops_project:
+    external: true
