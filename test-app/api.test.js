@@ -30,7 +30,7 @@ describe('API Tests', function () {
 
   it('should create a new tutorial', async function () {
     const data = {
-      title: 'second tutorial',
+      title: 'third tutorial',
       description: 'this is the description of the first tutorial',
       published: false
     };
